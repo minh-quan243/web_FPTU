@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+}
+
+.register-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at top left, #2563eb, transparent),
+    radial-gradient(circle at bottom right, #06b6d4, transparent),
+    #0f172a;
+}
+
+.register-card {
+  width: 420px;
+
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+  animation: fadeIn 0.5s ease;
+}
+
+.register-card h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-card input {
+  padding: 14px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 16px;
+}
+
+.register-card input::placeholder {
+  color: #cbd5e1;
+}
+
+.register-card button {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.register-card button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.error-message {
+  background: rgba(239,68,68,0.2);
+
+  border: 1px solid rgba(239,68,68,0.3);
+
+  color: #fecaca;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+.success-message {
+  background: rgba(34,197,94,0.2);
+
+  border: 1px solid rgba(34,197,94,0.3);
+
+  color: #bbf7d0;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+.login-text {
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+.login-text a {
+  color: #38bdf8;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
